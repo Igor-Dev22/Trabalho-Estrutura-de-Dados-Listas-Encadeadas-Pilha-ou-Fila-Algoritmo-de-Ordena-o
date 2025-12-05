@@ -1,49 +1,52 @@
-# Trabalho-Estrutura-de-Dados-Listas-Encadeadas-Pilha-ou-Fila-Algoritmo-de-Ordena-o
+## ⚙️ Arquitetura e Estruturas de Dados
 
-Requisitos do Trabalho
-1. Estrutura principal: Lista Encadeada
-A lista deve ser implementada pelo grupo e deve conter, obrigatoriamente:
-● Inserção de elementos
-● Remoção de elementos com ou sem um índice de comparação
-● Busca de elementos
-● Impressão dos elementos
-O aluno poderá escolher entre:
-● Lista encadeada simples
-● Lista duplamente encadeada
+### 1. Estrutura Principal: Lista Encadeada
+A base do projeto é uma **[ESCOLHA: Lista Simplesmente Encadeada / Lista Duplamente Encadeada]**.
+Diferente de vetores estáticos (arrays), esta lista permite o crescimento dinâmico da memória.
 
-2. Estrutura auxiliar: Pilha ou Fila
-O aluno deve escolher apenas uma:
+**Funcionalidades implementadas:**
+- [x] **Inserção:** Adiciona novos nós mantendo os ponteiros atualizados.
+- [x] **Remoção:** Remove nós por valor ou índice, liberando a memória.
+- [x] **Busca:** Percorre a lista para localizar elementos.
+- [x] **Display:** Imprime o estado atual da lista no console.
 
-Opção A – Pilha
-● Deve implementar push, pop, top e verificação de vazio
-● A pilha será utilizada para controlar/registrar operações realizadas na lista
-(Ex.: operações de undo, histórico, comandos pendentes, etc.)
 
-Opção B – Fila
-● Deve implementar enqueue, dequeue, front e verificação de vazio
-● A fila será usada para processar operações na lista em ordem FIFO
-(Ex.: processamento de tarefas, comandos agendados, requisições, etc.)
 
-3. Algoritmo de Ordenação
-O grupo deve implementar manualmente um algoritmo de ordenação, escolhendo entre:
-● Bubble Sort
-● Insertion Sort
-● Selection Sort
-● Merge Sort
-● Quick Sort
-A ordenação deve funcionar diretamente sobre a lista encadeada.
-4. Aplicação Final
-O aluno deve criar um pequeno programa demonstrando o funcionamento completo:
-● Inserir vários elementos na lista
-● Remover elementos
-● Gerenciar operações via pilha ou fila
-● Aplicar a ordenação escolhida e mostrar antes/depois
-O programa deve permitir ao usuário interagir por menu ou fluxo definido.
-5. Entregar
-O aluno deve entregar:
-● Código-fonte
-● Relatório explicando:
-○ Qual tipo de lista encadeada foi utilizada
-○ Qual estrutura auxiliar foi escolhida (pilha ou fila)
-○ O algoritmo de ordenação escolhido e justificativa
-○ Exemplos de execução (print da tela ou logs)
+---
+
+### 2. Estrutura Auxiliar: Pilha (Stack)
+Para o controle de operações, foi implementada uma **Pilha**.
+- **Comportamento:** LIFO (*Last In, First Out*).
+- **Objetivo:** Armazena o histórico de ações para permitir funcionalidades de "Desfazer" ou auditoria de inserções.
+- **Operações:** `push` (empilhar), `pop` (desempilhar), `top` (topo).
+
+
+
+[Image of stack data structure operations push and pop]
+
+
+### 2. Estrutura Auxiliar: Fila (Queue)
+Para o controle de operações, foi implementada uma **Fila**.
+- **Comportamento:** FIFO (*First In, First Out*).
+- **Objetivo:** Simula uma fila de processamento onde as operações na lista são agendadas e executadas em ordem de chegada.
+- **Operações:** `enqueue` (enfileirar), `dequeue` (desenfileirar), `front` (frente).
+
+---
+
+### 3. Algoritmo de Ordenação
+Para organizar os elementos da lista, implementamos manualmente o algoritmo **[NOME DO ALGORITMO, EX: Bubble Sort]**.
+
+* **Justificativa:** O algoritmo foi escolhido devido à sua [inserir motivo: simplicidade de implementação / eficiência O(n log n) / estabilidade].
+* **Implementação:** A ordenação ocorre através da manipulação direta dos ponteiros dos nós, evitando a criação de cópias desnecessárias dos dados.
+* **Complexidade:** $O(n^2)$ ou $O(n \log n)$ ---
+
+## 🚀 Como Executar
+
+### Pré-requisitos
+* Compilador [GCC / Clang / Javac / Python] instalado.
+
+### Passo a passo
+
+1. Clone o repositório:
+   ```bash
+   git clone [https://github.com/seu-usuario/seu-repo.git](https://github.com/seu-usuario/seu-repo.git)
